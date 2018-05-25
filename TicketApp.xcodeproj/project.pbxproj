@@ -1,0 +1,599 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A65AC5C44C1EF5FDB09010A2 /* libPods-TicketApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A1A867615D30AC7253A49028 /* libPods-TicketApp.a */; };
+		DB135BB720A1B63500DD5A72 /* DataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB135BB620A1B63500DD5A72 /* DataManager.m */; };
+		DB2001E520B1C487009E05C0 /* ProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2001E420B1C487009E05C0 /* ProgressView.m */; };
+		DB2001E820B1CE5E009E05C0 /* ContentViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2001E720B1CE5E009E05C0 /* ContentViewController.m */; };
+		DB2001EB20B1F093009E05C0 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2001EA20B1F093009E05C0 /* FirstViewController.m */; };
+		DB2001EE20B352E7009E05C0 /* NotificationCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = DB2001ED20B352E7009E05C0 /* NotificationCenter.m */; };
+		DB28CF8520A7362000BA4AD1 /* DataFiles in Resources */ = {isa = PBXBuildFile; fileRef = DB28CF8420A7362000BA4AD1 /* DataFiles */; };
+		DB65916D20A7440D00E316CD /* PlaceViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB65916C20A7440D00E316CD /* PlaceViewController.m */; };
+		DB65917120A849F400E316CD /* ApiManager.m in Sources */ = {isa = PBXBuildFile; fileRef = DB65917020A849F400E316CD /* ApiManager.m */; };
+		DB65917420A98E9E00E316CD /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = DB65917320A98E9E00E316CD /* Ticket.m */; };
+		DB69D23720A9D1FD00842929 /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DB69D23620A9D1FD00842929 /* TicketTableViewCell.m */; };
+		DB69D23A20A9D8CC00842929 /* TicketsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB69D23920A9D8CC00842929 /* TicketsViewController.m */; };
+		DB69D23D20A9FEA100842929 /* LocationService.m in Sources */ = {isa = PBXBuildFile; fileRef = DB69D23C20A9FEA100842929 /* LocationService.m */; };
+		DB69D24020AA06C900842929 /* MapPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = DB69D23F20AA06C900842929 /* MapPrice.m */; };
+		DB75355E20AA0EF900D0FEA9 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DB75355D20AA0EF900D0FEA9 /* MapViewController.m */; };
+		DBB8617E20B87EC100B398E4 /* NSString+Localize.m in Sources */ = {isa = PBXBuildFile; fileRef = DBB8617D20B87EC100B398E4 /* NSString+Localize.m */; };
+		DBB8618220B87FD400B398E4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBB8618420B87FD400B398E4 /* Localizable.strings */; };
+		DBB8618A20B8951C00B398E4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = DBB8618C20B8951C00B398E4 /* InfoPlist.strings */; };
+		DBC0397C20AC7B92009F20B7 /* FavoriteTicket.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DBC0397A20AC7B92009F20B7 /* FavoriteTicket.xcdatamodeld */; };
+		DBC0398320AC7D1A009F20B7 /* CoreDataHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = DBC0398220AC7D1A009F20B7 /* CoreDataHelper.m */; };
+		DBCEDABB20AABB5E00FA1733 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DBCEDABA20AABB5E00FA1733 /* MapKit.framework */; };
+		DBCEDABE20AB28E200FA1733 /* TabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBCEDABD20AB28E200FA1733 /* TabBarController.m */; };
+		DBE18B8520A1AA3B0078CDA3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE18B8420A1AA3B0078CDA3 /* AppDelegate.m */; };
+		DBE18B8820A1AA3B0078CDA3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE18B8720A1AA3B0078CDA3 /* MainViewController.m */; };
+		DBE18B8B20A1AA3B0078CDA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBE18B8920A1AA3B0078CDA3 /* Main.storyboard */; };
+		DBE18B8D20A1AA3C0078CDA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBE18B8C20A1AA3C0078CDA3 /* Assets.xcassets */; };
+		DBE18B9320A1AA3C0078CDA3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE18B9220A1AA3C0078CDA3 /* main.m */; };
+		DBE18B9E20A1AC390078CDA3 /* Country.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE18B9D20A1AC390078CDA3 /* Country.m */; };
+		DBE18BA020A1AC490078CDA3 /* City.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE18B9F20A1AC490078CDA3 /* City.m */; };
+		DBE18BA220A1AC5F0078CDA3 /* Airport.m in Sources */ = {isa = PBXBuildFile; fileRef = DBE18BA120A1AC5F0078CDA3 /* Airport.m */; };
+		DC4362A720AE6630009B8C15 /* FavoriteTicket+CoreDataClass.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4362A320AE662F009B8C15 /* FavoriteTicket+CoreDataClass.m */; };
+		DC4362A820AE6630009B8C15 /* FavoriteTicket+CoreDataProperties.m in Sources */ = {isa = PBXBuildFile; fileRef = DC4362A620AE6630009B8C15 /* FavoriteTicket+CoreDataProperties.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5D125AE87CC00AB6B30DEC86 /* Pods-TicketApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicketApp/Pods-TicketApp.release.xcconfig"; sourceTree = "<group>"; };
+		A1A867615D30AC7253A49028 /* libPods-TicketApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicketApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB135BB520A1B62000DD5A72 /* DataManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DataManager.h; sourceTree = "<group>"; };
+		DB135BB620A1B63500DD5A72 /* DataManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DataManager.m; sourceTree = "<group>"; };
+		DB2001E320B1C487009E05C0 /* ProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProgressView.h; sourceTree = "<group>"; };
+		DB2001E420B1C487009E05C0 /* ProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProgressView.m; sourceTree = "<group>"; };
+		DB2001E620B1CE5E009E05C0 /* ContentViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ContentViewController.h; sourceTree = "<group>"; };
+		DB2001E720B1CE5E009E05C0 /* ContentViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ContentViewController.m; sourceTree = "<group>"; };
+		DB2001E920B1F093009E05C0 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
+		DB2001EA20B1F093009E05C0 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		DB2001EC20B352D6009E05C0 /* NotificationCenter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NotificationCenter.h; sourceTree = "<group>"; };
+		DB2001ED20B352E7009E05C0 /* NotificationCenter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = NotificationCenter.m; sourceTree = "<group>"; };
+		DB28CF8420A7362000BA4AD1 /* DataFiles */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DataFiles; path = ../DataFiles; sourceTree = "<group>"; };
+		DB65916B20A7440D00E316CD /* PlaceViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceViewController.h; sourceTree = "<group>"; };
+		DB65916C20A7440D00E316CD /* PlaceViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceViewController.m; sourceTree = "<group>"; };
+		DB65916E20A759FD00E316CD /* Structures.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Structures.h; sourceTree = "<group>"; };
+		DB65916F20A849DE00E316CD /* ApiManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApiManager.h; sourceTree = "<group>"; };
+		DB65917020A849F400E316CD /* ApiManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ApiManager.m; sourceTree = "<group>"; };
+		DB65917220A98E9500E316CD /* Ticket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		DB65917320A98E9E00E316CD /* Ticket.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		DB69D23520A9D1FD00842929 /* TicketTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketTableViewCell.h; sourceTree = "<group>"; };
+		DB69D23620A9D1FD00842929 /* TicketTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketTableViewCell.m; sourceTree = "<group>"; };
+		DB69D23820A9D8CC00842929 /* TicketsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketsViewController.h; sourceTree = "<group>"; };
+		DB69D23920A9D8CC00842929 /* TicketsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketsViewController.m; sourceTree = "<group>"; };
+		DB69D23B20A9FE9600842929 /* LocationService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LocationService.h; sourceTree = "<group>"; };
+		DB69D23C20A9FEA100842929 /* LocationService.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationService.m; sourceTree = "<group>"; };
+		DB69D23E20AA06BE00842929 /* MapPrice.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapPrice.h; sourceTree = "<group>"; };
+		DB69D23F20AA06C900842929 /* MapPrice.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapPrice.m; sourceTree = "<group>"; };
+		DB75355C20AA0EF900D0FEA9 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		DB75355D20AA0EF900D0FEA9 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		DBB8617C20B87EB900B398E4 /* NSString+Localize.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Localize.h"; sourceTree = "<group>"; };
+		DBB8617D20B87EC100B398E4 /* NSString+Localize.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Localize.m"; sourceTree = "<group>"; };
+		DBB8617F20B87F8F00B398E4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Main.strings; sourceTree = "<group>"; };
+		DBB8618320B87FD400B398E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DBB8618720B88BEF00B398E4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
+		DBB8618B20B8951C00B398E4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBB8618D20B8951E00B398E4 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		DBC0397B20AC7B92009F20B7 /* FavoriteTicket.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FavoriteTicket.xcdatamodel; sourceTree = "<group>"; };
+		DBC0398120AC7D09009F20B7 /* CoreDateHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CoreDateHelper.h; sourceTree = "<group>"; };
+		DBC0398220AC7D1A009F20B7 /* CoreDataHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataHelper.m; sourceTree = "<group>"; };
+		DBCEDABA20AABB5E00FA1733 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		DBCEDABC20AB28E200FA1733 /* TabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		DBCEDABD20AB28E200FA1733 /* TabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarController.m; sourceTree = "<group>"; };
+		DBE18B8020A1AA3B0078CDA3 /* TicketApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TicketApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DBE18B8320A1AA3B0078CDA3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		DBE18B8420A1AA3B0078CDA3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		DBE18B8620A1AA3B0078CDA3 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		DBE18B8720A1AA3B0078CDA3 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		DBE18B8A20A1AA3B0078CDA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DBE18B8C20A1AA3C0078CDA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DBE18B9120A1AA3C0078CDA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBE18B9220A1AA3C0078CDA3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		DBE18B9A20A1AAF30078CDA3 /* Country.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Country.h; sourceTree = "<group>"; };
+		DBE18B9B20A1AB010078CDA3 /* City.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = City.h; sourceTree = "<group>"; };
+		DBE18B9C20A1AB0E0078CDA3 /* Airport.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Airport.h; sourceTree = "<group>"; };
+		DBE18B9D20A1AC390078CDA3 /* Country.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Country.m; sourceTree = "<group>"; };
+		DBE18B9F20A1AC490078CDA3 /* City.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = City.m; sourceTree = "<group>"; };
+		DBE18BA120A1AC5F0078CDA3 /* Airport.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Airport.m; sourceTree = "<group>"; };
+		DC4362A320AE662F009B8C15 /* FavoriteTicket+CoreDataClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FavoriteTicket+CoreDataClass.m"; sourceTree = "<group>"; };
+		DC4362A420AE662F009B8C15 /* FavoriteTicket+CoreDataClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FavoriteTicket+CoreDataClass.h"; sourceTree = "<group>"; };
+		DC4362A520AE662F009B8C15 /* FavoriteTicket+CoreDataProperties.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FavoriteTicket+CoreDataProperties.h"; sourceTree = "<group>"; };
+		DC4362A620AE6630009B8C15 /* FavoriteTicket+CoreDataProperties.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FavoriteTicket+CoreDataProperties.m"; sourceTree = "<group>"; };
+		FC39DC492DB2A80CA1297F81 /* Pods-TicketApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicketApp/Pods-TicketApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DBE18B7D20A1AA3B0078CDA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBCEDABB20AABB5E00FA1733 /* MapKit.framework in Frameworks */,
+				A65AC5C44C1EF5FDB09010A2 /* libPods-TicketApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		706527E412C699CD51F6B7D4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DBCEDABA20AABB5E00FA1733 /* MapKit.framework */,
+				A1A867615D30AC7253A49028 /* libPods-TicketApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C285BF6EB0B1350879DD9161 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FC39DC492DB2A80CA1297F81 /* Pods-TicketApp.debug.xcconfig */,
+				5D125AE87CC00AB6B30DEC86 /* Pods-TicketApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DB135BB420A1B61500DD5A72 /* DataManager */ = {
+			isa = PBXGroup;
+			children = (
+				DB135BB520A1B62000DD5A72 /* DataManager.h */,
+				DB135BB620A1B63500DD5A72 /* DataManager.m */,
+				DB65916F20A849DE00E316CD /* ApiManager.h */,
+				DB65917020A849F400E316CD /* ApiManager.m */,
+				DB69D23B20A9FE9600842929 /* LocationService.h */,
+				DB69D23C20A9FEA100842929 /* LocationService.m */,
+				DBC0398120AC7D09009F20B7 /* CoreDateHelper.h */,
+				DBC0398220AC7D1A009F20B7 /* CoreDataHelper.m */,
+				DB2001EC20B352D6009E05C0 /* NotificationCenter.h */,
+				DB2001ED20B352E7009E05C0 /* NotificationCenter.m */,
+			);
+			path = DataManager;
+			sourceTree = "<group>";
+		};
+		DB65916A20A7440100E316CD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				DBE18B8620A1AA3B0078CDA3 /* MainViewController.h */,
+				DBE18B8720A1AA3B0078CDA3 /* MainViewController.m */,
+				DB65916B20A7440D00E316CD /* PlaceViewController.h */,
+				DB65916C20A7440D00E316CD /* PlaceViewController.m */,
+				DB69D23520A9D1FD00842929 /* TicketTableViewCell.h */,
+				DB69D23620A9D1FD00842929 /* TicketTableViewCell.m */,
+				DB69D23820A9D8CC00842929 /* TicketsViewController.h */,
+				DB69D23920A9D8CC00842929 /* TicketsViewController.m */,
+				DB75355C20AA0EF900D0FEA9 /* MapViewController.h */,
+				DB75355D20AA0EF900D0FEA9 /* MapViewController.m */,
+				DBCEDABC20AB28E200FA1733 /* TabBarController.h */,
+				DBCEDABD20AB28E200FA1733 /* TabBarController.m */,
+				DB2001E320B1C487009E05C0 /* ProgressView.h */,
+				DB2001E420B1C487009E05C0 /* ProgressView.m */,
+				DB2001E620B1CE5E009E05C0 /* ContentViewController.h */,
+				DB2001E720B1CE5E009E05C0 /* ContentViewController.m */,
+				DB2001E920B1F093009E05C0 /* FirstViewController.h */,
+				DB2001EA20B1F093009E05C0 /* FirstViewController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		DBC0397920AC7B76009F20B7 /* CoreModels */ = {
+			isa = PBXGroup;
+			children = (
+				DC4362A420AE662F009B8C15 /* FavoriteTicket+CoreDataClass.h */,
+				DC4362A320AE662F009B8C15 /* FavoriteTicket+CoreDataClass.m */,
+				DC4362A520AE662F009B8C15 /* FavoriteTicket+CoreDataProperties.h */,
+				DC4362A620AE6630009B8C15 /* FavoriteTicket+CoreDataProperties.m */,
+				DBC0397A20AC7B92009F20B7 /* FavoriteTicket.xcdatamodeld */,
+			);
+			path = CoreModels;
+			sourceTree = "<group>";
+		};
+		DBE18B7720A1AA3B0078CDA3 = {
+			isa = PBXGroup;
+			children = (
+				DBE18B8220A1AA3B0078CDA3 /* TicketApp */,
+				DBE18B8120A1AA3B0078CDA3 /* Products */,
+				C285BF6EB0B1350879DD9161 /* Pods */,
+				706527E412C699CD51F6B7D4 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DBE18B8120A1AA3B0078CDA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DBE18B8020A1AA3B0078CDA3 /* TicketApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DBE18B8220A1AA3B0078CDA3 /* TicketApp */ = {
+			isa = PBXGroup;
+			children = (
+				DBC0397920AC7B76009F20B7 /* CoreModels */,
+				DB65916A20A7440100E316CD /* Controllers */,
+				DB28CF8420A7362000BA4AD1 /* DataFiles */,
+				DB135BB420A1B61500DD5A72 /* DataManager */,
+				DBE18B9920A1AA460078CDA3 /* Entities */,
+				DBE18B8320A1AA3B0078CDA3 /* AppDelegate.h */,
+				DBE18B8420A1AA3B0078CDA3 /* AppDelegate.m */,
+				DBE18B8920A1AA3B0078CDA3 /* Main.storyboard */,
+				DBE18B8C20A1AA3C0078CDA3 /* Assets.xcassets */,
+				DBE18B9120A1AA3C0078CDA3 /* Info.plist */,
+				DBE18B9220A1AA3C0078CDA3 /* main.m */,
+				DBB8617C20B87EB900B398E4 /* NSString+Localize.h */,
+				DBB8618C20B8951C00B398E4 /* InfoPlist.strings */,
+				DBB8617D20B87EC100B398E4 /* NSString+Localize.m */,
+				DBB8618420B87FD400B398E4 /* Localizable.strings */,
+			);
+			path = TicketApp;
+			sourceTree = "<group>";
+		};
+		DBE18B9920A1AA460078CDA3 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DB69D23E20AA06BE00842929 /* MapPrice.h */,
+				DB69D23F20AA06C900842929 /* MapPrice.m */,
+				DBE18B9A20A1AAF30078CDA3 /* Country.h */,
+				DBE18B9D20A1AC390078CDA3 /* Country.m */,
+				DBE18B9B20A1AB010078CDA3 /* City.h */,
+				DBE18B9F20A1AC490078CDA3 /* City.m */,
+				DBE18B9C20A1AB0E0078CDA3 /* Airport.h */,
+				DBE18BA120A1AC5F0078CDA3 /* Airport.m */,
+				DB65916E20A759FD00E316CD /* Structures.h */,
+				DB65917220A98E9500E316CD /* Ticket.h */,
+				DB65917320A98E9E00E316CD /* Ticket.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DBE18B7F20A1AA3B0078CDA3 /* TicketApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DBE18B9620A1AA3C0078CDA3 /* Build configuration list for PBXNativeTarget "TicketApp" */;
+			buildPhases = (
+				375EF2485BB1EE042BD59475 /* [CP] Check Pods Manifest.lock */,
+				DBE18B7C20A1AA3B0078CDA3 /* Sources */,
+				DBE18B7D20A1AA3B0078CDA3 /* Frameworks */,
+				DBE18B7E20A1AA3B0078CDA3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TicketApp;
+			productName = TicketApp;
+			productReference = DBE18B8020A1AA3B0078CDA3 /* TicketApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DBE18B7820A1AA3B0078CDA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Laptev Sasha";
+				TargetAttributes = {
+					DBE18B7F20A1AA3B0078CDA3 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = DBE18B7B20A1AA3B0078CDA3 /* Build configuration list for PBXProject "TicketApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				ru,
+			);
+			mainGroup = DBE18B7720A1AA3B0078CDA3;
+			productRefGroup = DBE18B8120A1AA3B0078CDA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DBE18B7F20A1AA3B0078CDA3 /* TicketApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBE18B7E20A1AA3B0078CDA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE18B8D20A1AA3C0078CDA3 /* Assets.xcassets in Resources */,
+				DBB8618220B87FD400B398E4 /* Localizable.strings in Resources */,
+				DB28CF8520A7362000BA4AD1 /* DataFiles in Resources */,
+				DBE18B8B20A1AA3B0078CDA3 /* Main.storyboard in Resources */,
+				DBB8618A20B8951C00B398E4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		375EF2485BB1EE042BD59475 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicketApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DBE18B7C20A1AA3B0078CDA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DBE18BA020A1AC490078CDA3 /* City.m in Sources */,
+				DBC0397C20AC7B92009F20B7 /* FavoriteTicket.xcdatamodeld in Sources */,
+				DBE18B9E20A1AC390078CDA3 /* Country.m in Sources */,
+				DB65917120A849F400E316CD /* ApiManager.m in Sources */,
+				DB135BB720A1B63500DD5A72 /* DataManager.m in Sources */,
+				DB2001E520B1C487009E05C0 /* ProgressView.m in Sources */,
+				DB69D23720A9D1FD00842929 /* TicketTableViewCell.m in Sources */,
+				DBE18B8820A1AA3B0078CDA3 /* MainViewController.m in Sources */,
+				DB69D24020AA06C900842929 /* MapPrice.m in Sources */,
+				DB65917420A98E9E00E316CD /* Ticket.m in Sources */,
+				DC4362A820AE6630009B8C15 /* FavoriteTicket+CoreDataProperties.m in Sources */,
+				DC4362A720AE6630009B8C15 /* FavoriteTicket+CoreDataClass.m in Sources */,
+				DB2001E820B1CE5E009E05C0 /* ContentViewController.m in Sources */,
+				DBB8617E20B87EC100B398E4 /* NSString+Localize.m in Sources */,
+				DB69D23D20A9FEA100842929 /* LocationService.m in Sources */,
+				DB65916D20A7440D00E316CD /* PlaceViewController.m in Sources */,
+				DB69D23A20A9D8CC00842929 /* TicketsViewController.m in Sources */,
+				DBC0398320AC7D1A009F20B7 /* CoreDataHelper.m in Sources */,
+				DBE18BA220A1AC5F0078CDA3 /* Airport.m in Sources */,
+				DB75355E20AA0EF900D0FEA9 /* MapViewController.m in Sources */,
+				DB2001EB20B1F093009E05C0 /* FirstViewController.m in Sources */,
+				DBCEDABE20AB28E200FA1733 /* TabBarController.m in Sources */,
+				DBE18B9320A1AA3C0078CDA3 /* main.m in Sources */,
+				DBE18B8520A1AA3B0078CDA3 /* AppDelegate.m in Sources */,
+				DB2001EE20B352E7009E05C0 /* NotificationCenter.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DBB8618420B87FD400B398E4 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBB8618320B87FD400B398E4 /* en */,
+				DBB8618720B88BEF00B398E4 /* ru */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		DBB8618C20B8951C00B398E4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBB8618B20B8951C00B398E4 /* en */,
+				DBB8618D20B8951E00B398E4 /* ru */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		DBE18B8920A1AA3B0078CDA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DBE18B8A20A1AA3B0078CDA3 /* Base */,
+				DBB8617F20B87F8F00B398E4 /* ru */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DBE18B9420A1AA3C0078CDA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		DBE18B9520A1AA3C0078CDA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DBE18B9720A1AA3C0078CDA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC39DC492DB2A80CA1297F81 /* Pods-TicketApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V8ZBRT5M4;
+				INFOPLIST_FILE = TicketApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = My.TicketApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DBE18B9820A1AA3C0078CDA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5D125AE87CC00AB6B30DEC86 /* Pods-TicketApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5V8ZBRT5M4;
+				INFOPLIST_FILE = TicketApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = My.TicketApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DBE18B7B20A1AA3B0078CDA3 /* Build configuration list for PBXProject "TicketApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBE18B9420A1AA3C0078CDA3 /* Debug */,
+				DBE18B9520A1AA3C0078CDA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DBE18B9620A1AA3C0078CDA3 /* Build configuration list for PBXNativeTarget "TicketApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DBE18B9720A1AA3C0078CDA3 /* Debug */,
+				DBE18B9820A1AA3C0078CDA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		DBC0397A20AC7B92009F20B7 /* FavoriteTicket.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				DBC0397B20AC7B92009F20B7 /* FavoriteTicket.xcdatamodel */,
+			);
+			currentVersion = DBC0397B20AC7B92009F20B7 /* FavoriteTicket.xcdatamodel */;
+			path = FavoriteTicket.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = DBE18B7820A1AA3B0078CDA3 /* Project object */;
+}

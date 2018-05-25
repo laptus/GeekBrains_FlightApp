@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:FavoriteTicket+CoreDataClass.h">
+   </FileRef>
+   <FileRef
+      location = "group:FavoriteTicket+CoreDataClass.m">
+   </FileRef>
+   <FileRef
+      location = "group:FavoriteTicket+CoreDataProperties.h">
+   </FileRef>
+   <FileRef
+      location = "group:FavoriteTicket+CoreDataProperties.m">
+   </FileRef>
+   <FileRef
+      location = "group:TicketApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
